@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/jpeg" href="cats.jpg">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="5">
+  <nav class="top-nav" aria-label="Навигация по страницам">
+    <div class="nav-wrap">
+      <a class="nav-card" data-page="1" href="index.html">1</a>
+      <a class="nav-card" data-page="2" href="page2.html">2</a>
+      <a class="nav-card" data-page="3" href="page3.html">3</a>
+      <a class="nav-card" data-page="4" href="page4.html">4</a>
+      <a class="nav-card" data-page="5" href="page5.html">5</a>
+      <a class="nav-card" data-page="6" href="page6.html">6</a>
+    </div>
+  </nav>
+
+  <main class="page-shell">
+    <section class="panel reveal">
+      <h1 class="section-title">Playlist, darling</h1>
+      <img class="image-soft" src="photo_2026-03-31.jpg" alt="Романтичная картинка для плейлиста">
+    </section>
+
+    <section class="panel reveal playlist-layout">
+      <div class="playlist-info">
+        <h3>"If loving you is forbidden, then let me remain in sin." — «Если любить тебя запрещено, тогда позволь мне остаться в этом грехе.»</h3>
+        <p>Нажимай на трек справа, кисонька. Можно ставить на паузу и перематывать.</p>
+      </div>
+
+      <div>
+        <ul id="playlist" class="playlist">
+          <li class="track-item"><button class="track-btn" type="button" data-track="0" data-audio-url="https://image2url.com/r2/default/audio/1775069324521-3f06b4ab-dac2-4600-9948-0c5a6c338a8a.mp3">01. M.</button></li>
+          <li class="track-item"><button class="track-btn" type="button" data-track="1" data-audio-url="https://image2url.com/r2/default/audio/1775070264413-7c5ea5cb-726e-4901-bf29-3e09fc7e8ac3.mp3">02. How Deep Is Your Love?</button></li>
+          <li class="track-item"><button class="track-btn" type="button" data-track="2" data-audio-url="https://image2url.com/r2/default/audio/1775069225600-73116cfd-bc7d-4b68-9932-3efdf46c3d5e.mp3">03. R U Mine</button></li>
+          <li class="track-item"><button class="track-btn" type="button" data-track="3" data-audio-url="https://image2url.com/r2/default/audio/1775070096532-ff6a5f4b-c3ff-4599-8602-cc07717437d0.mp3">04. Sweater Weather</button></li>
+          <li class="track-item"><button class="track-btn" type="button" data-track="4" data-audio-url="https://image2url.com/r2/default/audio/1775069923702-6b6ad7d9-cae7-4012-9ceb-1eb8f37ca201.mp3">05. Неважно</button></li>
+          <li class="track-item"><button class="track-btn" type="button" data-track="5" data-audio-url="https://image2url.com/r2/default/audio/1775070038018-d5c39d6b-82ff-485d-bd8a-d5b4e015496a.mp3">06. I Wanna Be Yours</button></li>
+          <li class="track-item"><button class="track-btn" type="button" data-track="6" data-audio-url="https://image2url.com/r2/default/audio/1775070324988-1a09a10c-99b0-4328-a48d-442586b2f341.mp3">07. Пачка сигарет</button></li>
+          <li class="track-item"><button class="track-btn" type="button" data-track="7" data-audio-url="https://image2url.com/r2/default/audio/1775070446467-5960ea69-3985-4e3b-92b5-4c860ea1f501.mp3">08. Северное сияние</button></li>
+          <li class="track-item"><button class="track-btn" type="button" data-track="8" data-audio-url="https://image2url.com/r2/default/audio/1775070356484-f0377fd3-df76-426c-8c1a-ca1d0c2ccd23.mp3">09. По уши в тебя влюблен</button></li>
+          <li class="track-item"><button class="track-btn" type="button" data-track="9" data-audio-url="https://image2url.com/r2/default/audio/1775039350085-908c61c4-82b5-4591-b18f-9a14526996f1.mp3">10. Apocalypse</button></li>
+        </ul>
+        <audio id="playlist-audio" class="audio-player" controls preload="metadata"></audio>
+        <p id="track-status" class="track-status">Выбери трек, и он начнёт играть.</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
